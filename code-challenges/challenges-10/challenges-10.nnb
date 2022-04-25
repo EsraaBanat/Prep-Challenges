@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function birthdayCakeCandles(candles) {\n    \nlet n =candles.length;\nlet max = candles[0];\nlet c=0;\n\nfor (let i=1;i<n;i++){\n    if (candles[i]>=max){\n     max=candles[i];    \n    }\n}\n\n    candles.forEach(element => {\n    if (element == max)\n    c++;\n    });\nreturn c;\n\n}"
             ],
             "outputs": []
         },
@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                "function birthdayCakeCandles(candles) {\n    \nlet n =candles.length;\nlet max = candles[0];\nlet c=0;\n\nfor (let i=1;i<n;i++){\n    if (candles[i]>=max){\n     max=candles[i];    \n    }\n}\n\n    candles.forEach(element => {\n    if (element == max)\n    c++;\n    });\nreturn c;\n\n}"
+                ""
             ],
             "outputs": []
         },
