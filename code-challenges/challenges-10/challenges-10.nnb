@@ -17,18 +17,14 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Equality In An Array](https://www.hackerrank.com/challenges/equality-in-a-array/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-
-                "function equalizeArray(arr) {\n    \n  let arrFreq = {};\n  let maxFreq = 0;\nfor (let num of arr) {\n    arrFreq[num] = arrFreq[num] + 1 || 1;\n  }\nfor (let value in arrFreq) {\n    if (arrFreq[value] > maxFreq) {\n      maxFreq = arrFreq[value];\n    }\n  }\nreturn (arr.length - maxFreq);\n    \n}\n"
-
-               
-
+                "function birthdayCakeCandles(candles) {\n    \nlet n =candles.length;\nlet max = candles[0];\nlet c=0;\n\nfor (let i=1;i<n;i++){\n    if (candles[i]>=max){\n     max=candles[i];    \n    }\n}\n\n    candles.forEach(element => {\n    if (element == max)\n    c++;\n    });\nreturn c;\n\n}"
             ],
             "outputs": []
         },
@@ -42,7 +38,7 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Halloween Sale](https://www.hackerrank.com/challenges/halloween-sale/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [Compare The Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
@@ -56,7 +52,7 @@
         {
             "language": "markdown",
             "source": [
-                "#####  [Sherlock And Squares](https://www.hackerrank.com/challenges/sherlock-and-squares/problem?isFullScreen=true)\n\nSolution:"
+                "#####  [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true)\n\nSolution:"
             ],
             "outputs": []
         },
