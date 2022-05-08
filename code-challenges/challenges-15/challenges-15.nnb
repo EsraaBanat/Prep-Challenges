@@ -24,7 +24,11 @@
         {
             "language": "javascript",
             "source": [
-                ""
+
+                "function equalizeArray(arr) {\n    \n  let arrFreq = {};\n  let maxFreq = 0;\nfor (let num of arr) {\n    arrFreq[num] = arrFreq[num] + 1 || 1;\n  }\nfor (let value in arrFreq) {\n    if (arrFreq[value] > maxFreq) {\n      maxFreq = arrFreq[value];\n    }\n  }\nreturn (arr.length - maxFreq);\n    \n}\n"
+
+               
+
             ],
             "outputs": []
         },
