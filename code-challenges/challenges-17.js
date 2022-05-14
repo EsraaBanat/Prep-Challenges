@@ -55,6 +55,9 @@ const filterLinks = (str) => {
   else if (str.includes("org")){
     linkEnd = str.indexOf('org');
    }
+  else if (str.includes("net")){
+    linkEnd = str.indexOf('net');
+   }
   return str.substring(linkStart,linkEnd+3);
 }
 // -------------------------------------------------------------------------------------------------------
@@ -75,9 +78,7 @@ const filterLinks = (str) => {
 
 const isPalindrome = (str) => { 
    let forwardStr=str.replace(/\W/gm, '').toLowerCase();
-   let backwardStr = 
-   str.split('').reverse().join('').replace(/\W/gm, 
-   '').toLowerCase();
+   let backwardStr = forwardStr.split('').reverse().join('');
     return (forwardStr == backwardStr);
 }
 // -------------------------------------------------------------------------------------------------------
